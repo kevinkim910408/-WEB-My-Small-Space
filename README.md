@@ -2,8 +2,8 @@
 Skills: html,css,js,jquery,python-flask,jinja,bootstrap
 
 # Description
-Login System - Flask, JWT, Bulma
-Quote - Open source API
-Weather - Open source API, Flask, MongoDB
-News - Python scrapping, Flask, MongoDB
-Favourite Links - Boostrap, Flask, MongoDB
+1. Login System - Flask, JWT, Bulma
+2. Quote - Open source API
+3. Weather - Open source API, Flask, MongoDB
+4. News - Python scrapping, Flask, MongoDB
+5. Favourite Links - Boostrap, Flask, MongoDB
