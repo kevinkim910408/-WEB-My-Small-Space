@@ -1,0 +1,211 @@
+/*COMMON*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #383636;
+}
+
+/*BODY PART*/
+.wrap {
+    /*background-color: #F2F2F2;*/
+    min-height: 100vh;
+    padding-bottom: 50px;
+    /*width: 100% !important;*/
+    background-image: url("https://t1.daumcdn.net/cfile/blog/2678E74C5368F23220");
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*Header*/
+.header {
+    /*background-color: yellow;*/
+}
+
+.header-box1 {
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 20px;
+}
+
+.header-box2 {
+    text-align: center;
+    font-family: 'jua', sans-serif;
+    padding: 20px;
+    margin: 20px;
+}
+
+.titleMSG,
+.titleQuote {
+    padding: 10px;
+    width: 1750px;
+    margin: auto;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    justify-content: space-around;
+}
+
+.main-box1 {
+    width: 90%;
+    max-width: 800px;
+}
+
+/*MAIN BOXES*/
+.weather-box,
+.favourite-box,
+.main-box2,
+.titleQuote{
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 10px;
+}
+
+/*WEAHTER*/
+.weather-box{
+    margin-bottom: 50px;
+    font-family: 'Jua', sans-serif;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/20161021/pngtree-retro-stationery-photo-563290.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-card {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 4px solid #c0c0c0;
+    margin: 10px;
+    background-image: url("data:image/jpeg;base64,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");
+    background-size: cover;
+    background-position: center;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.form-control{
+    text-align: center;
+}
+
+
+/*NEWS*/
+.main-box2 {
+    width: 90%;
+    max-width: 800px;
+    font-family: 'Jua', sans-serif;
+    background-image: url("https://i.pinimg.com/736x/14/d3/62/14d362d5ee1e7ea12cbd8957d9d26f04.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+.news-box {
+    width: 100%;
+    max-width: 500px;
+    border: 4px solid #c0c0c0;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+}
+
+.news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news-contents-title {
+    width: 300px; /* 너비는 변경될수 있습니다. */
+    text-overflow: ellipsis; /* 위에 설정한 300px 보다 길면 말줄임표처럼 표시합니다. */
+    white-space: nowrap; /* 줄바꿈을 하지 않습니다. */
+    overflow: hidden; /* 내용이 길면 감춤니다 */
+    display: block; /* ie6이상 현재요소를 블럭처리합니다. */
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.news-contents-contents {
+    width: 300px; /* 너비는 변경될수 있습니다. */
+    text-overflow: ellipsis; /* 위에 설정한 300px 보다 길면 말줄임표처럼 표시합니다. */
+    white-space: nowrap; /* 줄바꿈을 하지 않습니다. */
+    overflow: hidden; /* 내용이 길면 감춤니다 */
+    display: block; /* ie6이상 현재요소를 블럭처리합니다. */
+}
+
+.newsLinks {
+    text-decoration: none;
+    color: #000;
+}
+.newsLinks:visited {
+    color: #c0c0c0;
+}
+
+
+/*FAVOURITE*/
+.favourite-box{
+    background-image: url("https://wallpaperaccess.com/full/1092245.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.favourite-content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.favourite-content {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    background-color: transparent !important;
+    font-family: 'Jua', sans-serif;
+}
+
+#addLinkID {
+    width: 100%;
+}
+
+.favFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+}
