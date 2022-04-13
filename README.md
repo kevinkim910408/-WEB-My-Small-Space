@@ -7,3 +7,4 @@ Skills: html,css,js,jquery,python-flask,jinja,bootstrap
 3. Weather - Open source API, Flask, MongoDB
 4. News - Python scrapping, Flask, MongoDB
 5. Favourite Links - Boostrap, Flask, MongoDB
+
