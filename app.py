@@ -15,9 +15,10 @@ app.config['UPLOAD_FOLDER'] = "./static/profile_pics"
 
 SECRET_KEY = 'SPARTA' # 로그인 토큰 만들때 secret key
 
-# Mongo DB에 연결
-client = MongoClient('13.124.196.127', 27017, username="test", password="test")
-db = client.dbsparta_project_01_mss
+# sparta@cluster0 (내 db폴더이름@내클러스터이름)
+client = MongoClient('mongodb+srv://test:sparta@cluster0.m7jzf.mongodb.net/Cluster0?retryWrites=true&w=majority')
+db = client.dbsparta
+
 
 # main page
 @app.route('/')
